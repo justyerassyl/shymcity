@@ -1,0 +1,384 @@
+* {
+	text-decoration: none;
+}
+
+img {
+	display: inline-block;
+}
+
+
+
+
+/* ----------------
+   GRID
+---------------- */
+.container {
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.row:after {
+   clear: both;
+   content: "";
+   display: table;
+}
+.interesting {
+	width: 360px;
+	margin-right: 70px;
+	float: left;
+}
+
+.interesting:last-child {
+	margin-right: 0px;
+}
+
+/* ----------------
+  HEADER
+---------------- */
+
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .header-brand {
+	font-family: Catamaran;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul {
+	display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li{
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 0 16px;
+}
+
+header nav ul li a{
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;	
+}
+header .header-visitorinfo {
+    display: none;
+}
+
+header .header-cases {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+	margin: 31px 0;
+	text-align: left;
+	line-height: 38px;
+	padding: 0px 20px 0 40px;
+	border-right: 3px solid #111;
+	float: left;
+}
+header nav ul {
+	margin: 20px 0px 0px 20px;
+	float-left;
+}
+
+header nav ul li a{
+	line-height: 60px;	
+}
+
+header .header-cases {
+	display: block;
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;
+	line-height: 38px;
+	border: 1px solid #111;
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+	padding: 0 20px;
+}
+
+}
+
+/* ----------------
+   INDEX
+---------------- */
+
+.index-banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url('banner.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+	font-family: Catamaran;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+	font-family: Cormorant Garamond;
+	font-size: 28px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-box1-square {
+	margin: 10px 10px 0;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-image: url(1banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+.index-box2-rectangular {
+	margin: 10px 10px 0;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-image: url(2banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+	float: left;
+}
+
+.index-links div h3 {
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper {
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.index-banner {
+	height: 450px;
+}
+ 
+ .index-banner h1 {
+	display: block;
+	width: 560px;
+	margin: 0 auto;
+}
+ .index-box {
+ 	padding-bottom: 20px;
+ 	overflow: hidden;
+ }
+ .index-box5-square {
+ 	width: calc(25% - 20px) !important; 
+ }
+  .index-box4-rectangle {
+  	width: calc(50% - 20px) !important; 
+  }
+
+}
+
+/* ----------------
+   RECOMMENDATIONS
+---------------- */
+.regional {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.regional-item {
+	margin-bottom: 20px;
+}
+
+.regional-item__title a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #FFF;
+}
+
+.regional-item__title a:hover {
+	color: #0052C2;
+	border-color: rgba(0, 82, 194, 0, 3);
+}
+
+.regional-item__text p {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.title {
+	font-size: 46px;
+	margin-bottom: 60px;   /*otstup snizu */
+	font-family: 'Catamaran';
+	text-align: center;
+}
+
+.regional-item__img {
+	margin-bottom: 17px;
+}
+
+
+.regional-item__img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.regional-item__title {
+	font-size: 24px;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+
+.regional-item__text {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* ----------------
+   FOOTER
+---------------- */
+
+.footer {
+	width:100%;
+	background-color: #061634;
+	padding: 60px 0px;
+}
+
+footer {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+footer .header-brand {
+	font-family: Catamaran;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer nav ul {
+}
+
+footer nav ul li{
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 0 16px;
+}
+
+footer nav ul li a{
+	font-family: Catamaran;
+	font-size: 18px;
+	color: #111;
+	text-transform: uppercase;	
+}
+footer .header-visitorinfo {
+    display: none;
+}
+
+footer .header-cases {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer .header-brand {
+	margin: 31px 0;
+	text-align: left;
+	line-height: 38px;
+	padding: 0px 20px 0 40px;
+	border-right: 3px solid #111;
+	float: left;
+}
+footer nav ul {
+	margin: 20px 0px 0px 20px;
+	float-left;
+}
+
+footer nav ul li a{
+	line-height: 60px;	
+}
+
+footer .header-cases {
+	display: block;
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;
+	line-height: 38px;
+	border: 1px solid #111;
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+	padding: 0 20px;
+}
+
+}
+
+/* - - - - - - - - - - - -
+    MEDIA
+ - - - - - - - - - - - -  */
+
+@media (max-width: 1160px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.recommendations {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	img{
+		position: relative;
+		left: 15%;
+	}
+}

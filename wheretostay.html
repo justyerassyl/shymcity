@@ -1,0 +1,40 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hotel Booking Form</title>
+	</head>
+	<body>
+	     <form action="destination.html" method="GET">
+	     	<fieldset>
+	     		<legend>Personal Details: </legend>
+	     		<label for="name">Username:</label><input type="text" name="username" id="name" required autofocus placeholder="Your username" pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
+	     		<label for="email">Email:</label><input type="text" name="email" id="email" required placeholder="Your Email" pattern = "[a-zA-Z]{3,}@[a-zA-Z]{3.}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid email address">
+	     		<label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="Please enter your phone number" pattern = "[0-9]{4} [0-9]{3} [0-9]{2} [0-9]{2}" title="Please enter in a phone number in this format: #### ### ## ##">
+	     		<select name="country" required>
+	     			<option value=""></option>
+	     			<option value="US">US</option>
+	     			<option value="UK">UK</option>
+	     			<option value="KZ">KZ</option>
+	     			<option value="RU">RUS</option>
+	     		</select>
+	     	</fieldset>
+	     	<br>
+	     	<fieldset>
+	     		<legend>Booking Details: </legend>
+                <label for="date">Booking date: </label><input type="date" name="date" min="2018-12-02">
+                <label for="numberOfGuests">Number of Guests: </label> <input type="number" name="numberOfGuests" min="1" max="6">
+                <label for="rooms">Rooms: </label> <input type="number" name="Rooms" min="1" max="10">
+                <p>Do you require meals?</p>
+                <label for="yesMeals">Yes: </label><input type="radio" name="meals" value="yesMeals">
+                <label for="noMeals">No: </label><input type="radio" name="meals" value="noMeals">
+                <br>
+                <br>
+                <label for="balcony">Do you require a balcony? </label><input type="checkbox" name="balcony" value="yes" checked>
+                <br>
+                <br>
+                <input type="image" src="button.png">
+	     	</fieldset>
+	     </form>
+	</body>
+	</html>

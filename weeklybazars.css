@@ -1,0 +1,354 @@
+* {
+	text-decoration: none;
+}
+
+img {
+	display: inline-block;
+}
+
+
+
+
+/* ----------------
+   GRID
+---------------- */
+.container {
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.row:after {
+   clear: both;
+   content: "";
+   display: table;
+}
+.interesting {
+	width: 360px;
+	margin-right: 70px;
+	float: left;
+}
+
+.interesting:last-child {
+	margin-right: 0px;
+}
+
+/* ----------------
+  HEADER
+---------------- */
+
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .header-brand {
+	font-family: Catamaran;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul {
+	display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li{
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 0 16px;
+}
+
+header nav ul li a{
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;	
+}
+header .header-visitorinfo {
+    display: none;
+}
+
+header .header-cases {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+	margin: 31px 0;
+	text-align: left;
+	line-height: 38px;
+	padding: 0px 20px 0 40px;
+	border-right: 3px solid #111;
+	float: left;
+}
+header nav ul {
+	margin: 20px 0px 0px 20px;
+	float-left;
+}
+
+header nav ul li a{
+	line-height: 60px;	
+}
+
+header .header-cases {
+	display: block;
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform: uppercase;
+	line-height: 38px;
+	border: 1px solid #111;
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+	padding: 0 20px;
+}
+
+}
+
+/* ----------------
+   INDEX
+---------------- */
+
+.index-banner {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url('bazaar.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+	font-family: Catamaran;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+	font-family: Cormorant Garamond;
+	font-size: 28px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.boxX{
+  width: 95%;
+  height: 890px;
+  background: #061634;
+  padding: 40px;
+  text-align: center;
+  transition: .5s ease-in-out;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+
+  
+}
+.imgFPP{
+  width: 70%;
+}
+
+
+.nnn{
+  font-weight: 100;
+  padding: 25px 50px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+.dropbtn {
+  background-color: #061634;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #061634;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #061634}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0616341;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .boxX{
+  width: 85%;
+  height: 890px;
+  background: #061634;
+  padding: 40px;
+  text-align: center;
+  transition: .5s ease-in-out;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+
+
+}
+
+
+.nnn{
+  font-weight: 100;
+  padding: 25px 50px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+.dropbtn {
+  background-color: #061634;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #061634;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #061634}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0616341;
+
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
